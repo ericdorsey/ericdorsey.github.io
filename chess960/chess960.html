@@ -9,6 +9,7 @@
   <!--<body onload="drawOnBoard(200, drawPositions(positions[200]));">-->
   <body onload="go();">    
 
+<div id="outermost">
 
 <div id="board">
 
@@ -68,16 +69,15 @@
 
 
 <span id="thisposline">
-Showing Chess 960 position <span id="whichposfield"></span>
+Showing Chess 960 position # <span id="whichposfield"></span>
 </span>
 
-<p>&nbsp;</p>
 
 <form id="getpositionsform">
     <input type="button" class="button" onclick="go()" id="getrandom" value="Get A Random Chess 960 Position">
-    <p>
+    <div class="spaceydiv">
     -- or --
-    <p>
+    </div>
     <input type="button" class="button" onclick="specific_go()" id="getspecific" value="Get Specific Chess 960 Position"> 
     <input type="text" id="getspecificinput" size=2 maxlength=3>
     <br>
@@ -96,8 +96,10 @@ Showing Chess 960 position <span id="whichposfield"></span>
 <hr>
 
 This Chess 960 Generator created by <a href="https://twitter.com/EricDorsey">Eric Dorsey</a>. 
-If you find it useful and are so compelled, you can <a href="https://www.paypal.com/paypalme2/donatetoericdorsey">donate here</a> and buy me a coffee.
+If you find it useful and are so compelled you can <a href="https://www.paypal.com/paypalme2/donatetoericdorsey">buy me a coffee</a>.
 </div>
+</div>
+
 </div>
 
 </body>
