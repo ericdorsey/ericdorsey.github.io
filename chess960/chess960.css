@@ -15,6 +15,11 @@ a {
     font-weight: bold;
 }
 
+.spaceydiv {
+    padding: 5px;
+    font-size: 20px;
+}
+
 hr {
     margin: 8px;
 }
@@ -27,9 +32,15 @@ hr {
     width: 100%;
 }
 
+#outermost {
+    text-align: center;
+    display: block;
+}
+
 #board {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .item {
@@ -69,6 +80,8 @@ break{
     font-family: "Arial";
     font-size: 24px;
     display: block;
+    padding-top: 12px;
+    padding-bottom: 26px;
 }
 
 #getpositionsform {
@@ -90,12 +103,13 @@ break{
 
 #whatis {
     padding-top: 10%;
-    padding-left: 10px;
     display: flex;
+    justify-content: center;
 }
 
 #whatiscontent {
-    flex: 0 0 85%;
+    flex: 0 0 65%;
     font-size: 12px;
     font-family: "Arial";
+    text-align: left;
 }
